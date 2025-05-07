@@ -1,0 +1,75 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal sobre el maravilloso pueblo de Santa María Acu</title>
+    <style>
+        /* Estilos para el fondo de video */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        .contenido {
+            position: relative;
+            z-index: 1;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        /* Estilos del botón */
+        .boton-abrir {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #B22222;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .boton-abrir:hover {
+            background-color: #8B0000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="video-fondo">
+        <source src="Tierra Yucatan(720P_HD).mp4" type="video/mp4">
+        Tu navegador no soporta el video de fondo.
+    </video>
+
+    <!-- Contenido sobre el video -->
+    <div class="contenido">
+        <h1>HACIENDA SANTA MARIA ACU</h1>
+        <p>ACOMPAÑAME A EXPLARAR MAS SOBRE ESTE MARAVILLSO PUEBLO</p>
+        <button class="boton-abrir" onclick="window.location.href='menuexperimento.html'">Ir al Menú</button><p></p>
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=mOXS_kbiTJI')">Ver en YouTube como era antes Santa Maria Acu</button></p>
+
+    </div>
+
+</body>
+</html>

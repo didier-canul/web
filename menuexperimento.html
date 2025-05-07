@@ -1,0 +1,220 @@
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradición y Cultura de Santa María Acu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Capilla_de_Santa_María_Acú.jpg') no-repeat center center/cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #8B0000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+        }
+        nav {
+            background-color: #B22222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+        nav a {
+            background-color: #DC143C;
+            color: white;
+            padding: 12px 18px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #FF6347;
+        }
+        .section-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .section-btn {
+            background-color: #ed6104cb;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .section-btn:hover {
+            background-color: #ff0000e6;
+        }
+        section {
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 15px;
+            display: none;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+        section.active {
+            display: block;
+        }
+        footer {
+            background-color: #1d0505;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+        }
+        p, h2 {
+            color: #333;
+        }
+        .youtube-btn, .map-link, .web-btn {
+            background-color: #FF0000;
+            color: white;
+            padding: 10px 18px;
+            margin: 8px 5px 0 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .youtube-btn:hover, .web-btn:hover {
+            background-color: #f3ef07;
+        }
+        .map-link {
+            background-color: #228B22;
+            font-weight: bold;
+        }
+        .map-link:hover {
+            background-color: #32CD32;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a la Tradición y Cultura de Santa María Acu</h1>
+        <p>Descubre la riqueza cultural de nuestro pueblo</p>
+    </header>
+
+    <div class="section-buttons">
+        <button class="section-btn" onclick="showSection('historias')">Historias y Leyendas</button>
+        <button class="section-btn" onclick="showSection('fiesta santa maria acu')">Fiestas</button>
+        <button class="section-btn" onclick="showSection('gastronomia')">Gastronomía</button>
+        <button class="section-btn" onclick="showSection('artesania')">Artesanía Local</button> 
+        <button class="section-btn" onclick="showSection('contacto')">Contacto</button>
+        <button class="section-btn" onclick="window.location.href='turistico.html'">Destinos turisticos</button>
+        <button class="section-btn" onclick="window.location.href='costumbres y tradicciones.html'">Costumbes y tracciones </button>
+        <button class="section-btn" onclick="window.location.href='despedida.html'"> AGRADECIMIENTO</button>
+        
+    </div>
+
+    <section id="historias">
+        <h2>Historias y Leyendas</h2>
+        <p><b>Historia:</b><br><br>
+        1. Época Prehispánica:<br>
+        - Santa María Acú pertenecía al cacicazgo maya de Ah Canul, resistiendo a los Tutul Xiúes.<br>
+        - Los mayas de esta zona eran principalmente agricultores.<br><br>
+        2. Colonización Española:<br>
+        - Se establecieron encomiendas y construyeron una capilla en honor a la Virgen María.<br><br>
+        3. Siglo XIX y Guerra de Castas:<br>
+        - Durante la Guerra de Castas, Santa María Acú sufrió ataques aunque no fue un foco principal.<br>
+        - Continuaron dedicados a la agricultura.</p>
+        
+        <p><b>Leyendas:</b><br><br>
+        1. La Xtabay:<br>
+        - Espíritu que habita cerca de los árboles de ceiba.<br>
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=7FjQKCtjs4w')">Ver en YouTube</button><br><br>
+        
+        2. El Huay Chivo:<br>
+        - Brujo que se transforma en bestia para asustar.<br>
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=LnKhq2ylz5c')">Ver en YouTube</button></p>
+
+        <a href="https://es.wikipedia.org/wiki/Huay_Chivo" class="web-btn" target="_blank">Leer más en Wikipedia</a>
+    </section>
+
+    <section id="fiesta santa maria acu">
+        <h2>Feria en honor a la santa cruz</h2>
+        <p>Las fiestas patronales de Santa María Acu son el evento más esperado, con música, corridas de toros, danza y gastronomía tradicional
+            proxima feria del 9 al 13 de mayo no te lo puedes perder.</p>
+
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=nL6kDnC-PdE')">Ver Vaquería</button>
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=01cOLPdjGEw')">Ver Corrida de Toros</button>
+        <button class="youtube-btn" onclick="window.open('https://www.youtube.com/watch?v=XSkEdEO2p1Q')">Ver Baile</button>
+        <button class="youtube-btn" onclick="window.location.href='cartelera.html'"target="_blank">ir a mas informaciode la cartelera </button>
+
+        <a href="https://www.youtube.com/watch?v=qqO7nEijVw8" class="web-btn" target="_blank">ver cenote</a>
+    </section>
+
+    <section id="gastronomia">
+        <h2>Gastronomía</h2>
+        <p>Santa María Acu ofrece delicias de platillos ancestrales es rica y diversa, caracterizada por la combinación de sabores y técnicas culinarias ancestrales mayas, influencias españolas y caribeñas. Algunos platillos típicos son la cochinita pibil, el relleno negro, los papadzules, la sopa de lima, los huevos motuleños y el poc-chuc. 
+            Características de la gastronomía yucateca:
+            Técnicas ancestrales:
+            Se utilizan técnicas de cocción tradicionales como el horno de tierra (pib) para preparar platillos como la cochinita pibil. 
+            Ingredientes locales:
+            Se utilizan ingredientes como maíz, tomate, frijol, chile habanero, naranja agria y achiote. 
+            Influencias externas:<br> 
+            La cocina yucateca ha sido influenciada por la cocina española y la cocina caribeña, introduciendo ingredientes y técnicas como el coco, la yuca y el plátano macho. 
+            Platillos emblemáticos:<br>
+            Cochinita pibil: Cerdo marinado en achiote y cocido en horno de tierra. 
+            Relleno negro: Pollo o cerdo en salsa de chile negro. <br>
+            Papadzules: Tortillas de maíz rellenas de frijol y huevo cocido en una salsa agria de tomate y achiote. 
+            Sopa de lima: Sopa de pollo con cítricos y especias. <br>
+            Huevos : Huevos estrellados sobre una torta de maíz, acompañados de frijol, chorizo y chicharrón. 
+            Poc-chuc: Carne de cerdo o pollo asada en una salsa de cebolla morada y naranja agria. <br>
+            Sabores únicos:
+            La gastronomía yucateca se caracteriza por su sabor ácido, dulce, picante y salado, gracias a la combinación de ingredientes y técnicas culinarias. 
+            Patrimonio Cultural Intangible:<br>
+            La gastronomía yucateca fue declarada Patrimonio Cultural Intangible del Estado de Yucatán en 2013. 
+            Otros platillos yucatecos:<br>
+            Salpimentado: Plato con pollo y carne de puerco en salsa de chile. <br>
+            Tamales de pollo o gallina: Tamales de maíz rellenos de pollo o gallina. <br>
+            Brazo de reina: Pastel de maíz con chaya, pepita y tomate.<br>
+            Mukbil pollo: Tamal gigante horneado en pib. .</p>
+        <a href="https://www.sandos.com/es/blog/gastronomia-de-yucatan-esta-de-maravilla" class="web-btn" target="_blank">Más sobre la Gastronomía Yucateca</a>
+    </section>
+
+    <section id="artesania">
+        <h2>Artesanía Local</h2>
+        <p>Los artesanos producen piezas únicas de cerámica, textiles y objetos que representan nuestra identidad cultural a contniacion puede explorar y ver imagenes de trabajos echos por indigenas del pueblo.</p>
+        <a href="https://www.google.com/search?sca_esv=190500b2ec45819f&q=artesania+de+santa+maria+acu+halacho+yucatan&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvK9uZj3HA_MTJAA6lXR8yQIHhBi298nC38CQZOY2HEJbZvsLV77zEUv5_mptgx3dxfqz4zFVD4dPX8CaG8JqW7fmo7evx0_U8kpnRYbFb9Zt0iiUcNt3q93RMByAi3lj9lYkMoWJV8WAoLfKAUXsL5zJONgMHjXdIw0XP1nEnzIpaOL7Eyhilrc35HzRtjYpAonV9LA&sa=X&ved=2ahUKEwiu-oXg_PuMAxXqQzABHfYOGC8QtKgLegQIFRAB&biw=1536&bih=695&dpr=1.25" class="web-btn" target="_blank">Explorar Artesanías</a>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> 97837 Halachó, Yucatán, México</p>
+        <a href="https://www.google.com/maps/search/97837+Halachó,+Yucatán,+México" class="map-link" target="_blank">Abrir en Google Maps</a>
+    </section>
+
+    <footer>
+        HACIENDA SANTA MARIA ACU HALACHO YUCATAN  © 2025
+    </footer>
+
+    <script>
+        document.getElementById('historias').classList.add('active');
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
